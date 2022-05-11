@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🪄 Magic Merger 🦄</title>
+    <script defer src="render.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          🪄 Magic Merger 🦄
+        </h1>
+        <div class="container">
+          <label for="oldFile"><strong>Step 1:</strong> Enter the CSV file you need updated by the new CSV file. This will be
+            the Base CSV file.</label>
+          <input style="margin:20px" id="oldFile" title="oldFile" type="file" />
+        </div>
+        <p style="margin:20px" class="container">---------------------------</p>
+        <div class="container">
+          <div>
+          <label for="newFile"><strong>Step 2:</strong> Enter the CSV that you wish to merge with the Base CSV. This will add or update data to the Base CSV.
+            It
+            will never remove data from the old CSV.</label>
+          </div>
+          <input style="margin:20px" id="newFile" title="newFile" type="file" />
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>
