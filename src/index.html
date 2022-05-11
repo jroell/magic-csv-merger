@@ -16,14 +16,15 @@
           🪄 Magic Merger 🦄
         </h1>
         <div class="container">
-          <label for="oldFile"><strong>Step 1:</strong> Enter the CSV file you need updated by the new CSV file. This will be
-            the Base CSV file.</label>
+          <label for="oldFile"><strong>Step 1:</strong> Add the base CSV file. This will be
+            used to make sure that any records that match in the below CSV file are handled correctly in the generated file.</label>
           <input style="margin:20px" id="oldFile" title="oldFile" type="file" />
         </div>
         <p style="margin:20px" class="container">---------------------------</p>
         <div class="container">
           <div>
-          <label for="newFile"><strong>Step 2:</strong> Enter the CSV that you wish to merge with the Base CSV. This will add or update data to the Base CSV.
+          <label for="newFile"><strong>Step 2:</strong> Enter CSV with new or updated records (rows).
+            If a row exists in the base CSV this will update the fields that have changed but ignore any fields that have changed to be blank. This will prevent the loss of any data for records that match, but will still update the data if new field values do exist on matching rows.
             It
             will never remove data from the old CSV.</label>
           </div>
